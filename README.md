@@ -18,7 +18,8 @@
 
 FN70489 Scanner is a python utility used to help identify IOS/IOS-XE devices that could possibly be affected by Cisco Field Notice # 70489.  It is highly advised that you read and understand the field notice before using this utility.
 
-https://www.cisco.com/c/en/us/support/docs/field-notices/704/fn70489.html
+* https://www.cisco.com/c/en/us/support/docs/field-notices/704/fn70489.html
+* https://www.cisco.com/c/en/us/support/docs/security-vpn/public-key-infrastructure-pki/215118-ios-self-signed-certificate-expiration-o.html
 
 *This utility is NOT a single source of truth for identifying devices affected by FN70489.*  What this script does is to return a CSV file with attributes found in the devices *show ver* and *running config* that warrant further scrutiny as they may be impacted by FN7089.  See the [use](#Use) section below for more details on what is checked.
 
