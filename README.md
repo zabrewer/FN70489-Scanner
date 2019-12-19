@@ -41,7 +41,7 @@ git clone https://github.com/zabrewer/FN70489-Scanner.git
 python3 -m venv FN70489-Scanner
 ```
 
-**3. Change to the Meraki-ActionBatcher directory**
+**3. Change to the FN70489-Scanner directory**
 ```
 cd FN70489-Scanner
 ```
