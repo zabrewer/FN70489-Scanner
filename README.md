@@ -26,7 +26,7 @@ https://www.cisco.com/c/en/us/support/docs/field-notices/704/fn70489.html
 
 ## Requirements
 
-Meraki ActionBatcher requires Python 3.5 or greater and the modules referenced in the requirements.txt file in this repository.
+FN70489 scanner requires Python 3.5 or greater and the modules referenced in the requirements.txt file in this repository.
 
 ## Installing to a Python Virtual Environment
 
