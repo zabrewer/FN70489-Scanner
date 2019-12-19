@@ -1,0 +1,4 @@
+- device_type: cisco_ios
+  host: 127.0.0.1
+  username: testuser
+  password: testpass

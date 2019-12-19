@@ -1,0 +1,4 @@
+asyncio==3.4.3
+jtextfsm==0.3.1
+netdev==0.9.3
+PyYAML==5.2
