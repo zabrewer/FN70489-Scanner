@@ -176,8 +176,8 @@ crypto pki certificate chain TP-self-signed-553499999
 
 1. The first test is to test the version of IOS by parsing *show ver*.  It's not shown above but this host is running 16.6.2 which is affected by the Field Notice
 2. The second test is for *crypto pki* so that test passes based upon the running config snippet above
-3. The third test looks for the name of the certificate above.  It returns *TP-self-signed-553499999*
-4. The fourth test looks for the number of references in the running config for the self-signed cert name gleaned in step #3.  For this running config, that # is 3 which is the minimum often used in the config just to create the cert.  As mentioned before, a higher number may indicate other services in the running config referencing the certificate
+3. The third test looks for the name of the certificate.  In the example above, the the script returns *TP-self-signed-553499999*
+4. The fourth test looks for the number of references in the running config for the self-signed cert name (*TP-self-signed-553499999* in this example) gleaned in step #3. For this running config, the cert name is referenced 3 times which is the minimum often used in the config just to create the cert.  As mentioned before, a higher number may indicate other services in the running config referencing the certificate
 5. The 5th test looks for any instance of *certificate self-signed*
 6. The 6th test looks for any instance of *enrollment selfsigned*
 
@@ -188,7 +188,7 @@ So here is our resulting host_output.csv based upon the above running config sni
 | 192.168.1.1  |  16.6.2 | True | True | TP-self-signed-553499999 | 3 | True | True
 
 
-Based upon all of these criteria, this host would be a good candidate for the upgrade/workaround *although* it does not seem to have other services or lines referencing the self-signed certificate (less than 4 references for the self-signed cert).  
+Based upon all of these criteria, this host would be a good candidate for the upgrade/workaround *although* it does not seem to have other services or lines referencing the self-signed certificate (less than 4 references of the self-signed cert *TP-self-signed-553499999* in the entire running config).  
 
 If you see 4 or more references to a self-signed certificate in the *number of certname references* field, you may want to inspect the config to see what services (secure voice, https, etc.) may be referencing the self-signed certificate.  Of course I have not tested thousands of configs so your results may vary - please contact me if you find anything to the contrary and I will update the documentation here.
 
