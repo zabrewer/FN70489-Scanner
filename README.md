@@ -92,7 +92,7 @@ deactivate
 
 This scanner makes SSH connections to IOS devices and reads attributes from show run and show ver - it does so quickly by use of Python's Asychio module.  It has been tested in a lab environment only.  The license file provided with this software absolves all parties of issues, accidental or otherwise.  
 
-That said, if you have issues or questions I will try to update the code if you (open an issue on this repository)[https://github.com/zabrewer/FN70489-Scanner/issues].
+That said, if you have issues or questions I will try to update the code if you [open an issue on this repository](https://github.com/zabrewer/FN70489-Scanner/issues).
 
 ## The hosts.yaml File
 
