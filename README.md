@@ -183,7 +183,7 @@ So here is our resulting host_output.csv based upon the above running config sni
 
 | host    | ios_version    | version affected? | crypto pki found? | certname | number of certname references | found certificate self-signed? | enrollment selfsigned? |
 |:----------------------|-----------|------|----------|------|----------|------|----------|
-| 192.168.0.1  |  16.6.2 | True | True | TP-self-signed-553499999 | 3 | True | True
+| 192.168.1.1  |  16.6.2 | True | True | TP-self-signed-553499999 | 3 | True | True
 
 
 Based upon all of these criteria, this host would be a good candidate for the upgrade/workaround *although* it does not seem to have other services or lines referencing the self-signed certificate ( > 4)
