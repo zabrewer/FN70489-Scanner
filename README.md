@@ -181,7 +181,7 @@ crypto pki certificate chain TP-self-signed-553499999
 5. The 5th test looks for any instance of *certificate self-signed*
 6. The 6th test looks for any instance of *enrollment selfsigned*
 
-So here is our resulting host_output.csv based upon the above running config snippet:
+So here is our resulting *host_output.csv* based upon the above running config snippet:
 
 | host    | ios_version    | version affected? | crypto pki found? | certname | number of certname references | found certificate self-signed? | enrollment selfsigned? |
 |:----------------------|-----------|------|----------|------|----------|------|----------|
