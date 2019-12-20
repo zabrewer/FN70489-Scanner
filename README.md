@@ -6,7 +6,7 @@
     - [Requirements](#Requirements)
     - [Installing to a Python Virtual Environment](#Installing-to-a-Python-Virtual-Environment)
 - [Use](#Use)
-    - [Caution!](#Warning!)
+    - [Caution!](#Caution!)
     - [The hosts.yaml File](#The-hosts.yaml-File)
     - [Overview of Tests Completed Per Host](#overview-of-tests-completed-per-host)
     - [Example Config](#Example-Config)
