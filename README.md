@@ -117,7 +117,7 @@ cisco_ios,192.168.1.1,testuser,testpass
 cisco_ios,192.168.1.1,testuser,testpass
 ```
 
-Here is one such tool although I have not used them myself:
+Here is one such tool although I have not used it myself:
 https://github.com/josuerojasrojas/csv-yaml
 
 A quick Google search should turn up many results.
