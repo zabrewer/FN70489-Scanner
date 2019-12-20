@@ -186,7 +186,9 @@ So here is our resulting host_output.csv based upon the above running config sni
 | 192.168.1.1  |  16.6.2 | True | True | TP-self-signed-553499999 | 3 | True | True
 
 
-Based upon all of these criteria, this host would be a good candidate for the upgrade/workaround *although* it does not seem to have other services or lines referencing the self-signed certificate (less than 4 references for the self-signed cert).  If you see 4 or more references to the certification in the *number of certname references* field, you may want to inspect the config to see what services (secure voice, https, etc.) may be referencing the self-signed certificate.
+Based upon all of these criteria, this host would be a good candidate for the upgrade/workaround *although* it does not seem to have other services or lines referencing the self-signed certificate (less than 4 references for the self-signed cert).  
+
+If you see 4 or more references to a self-signed certificate in the *number of certname references* field, you may want to inspect the config to see what services (secure voice, https, etc.) may be referencing the self-signed certificate.  Of course I have not tested thousands of configs so your results may vary - please contact me if you find anything to the contrary and I will update the documentation here.
 
 [Back To Index](#FN70489-Scanner)
 
