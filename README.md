@@ -174,7 +174,7 @@ crypto pki certificate chain TP-self-signed-553499999
 !
 ```
 
-1. The first test is to test the version of IOS by parsing *show ver*.  It's not shown, above but this host is running 16.6.2 which is affected by the Field Notice
+1. The first test is to test the version of IOS by parsing *show ver*.  It's not shown above but this host is running 16.6.2 which is affected by the Field Notice
 2. The second test is for *crypto pki* so that test passes based upon the running config snippet above
 3. The third test looks for the name of the certificate above.  It returns *TP-self-signed-553499999*
 4. The fourth test looks for the number of references in the running config for the self-signed cert name gleaned in step #3.  For this running config, that # is 3 which is the minimum often used in the config just to create the cert.  As mentioned before, a higher number may indicate other services in the running config referencing the certificate
