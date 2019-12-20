@@ -131,7 +131,7 @@ For each host identified in hosts.yaml, the following tests are performed:
 (if no crypto pki is found, no further tests are made).  If found, *True* is written for the *crypto pki found?* field in the *hosts_output.csv* file
 5. Use regex to find the certificate name in the *running config*.  Add the certificate name to the *hosts_output.csv* file under the *certname* field
 6. Use regex to find the number of instances where the certificate name is referenced in the *running config* and add that number to the *number of certname references* field in the *hosts_output.csv* file.
-This is important as it can indicate that other services (secure voice, https, etc.) are depending upon the certificate.  In testing, the number of times a certificate is referenced is 3 just in declaring the certificate (see the below example) so a number > 3 may indicate services dependent upon the certificate.
+This is important as it can indicate that other services (secure voice, https, etc.) are depending upon the certificate.  In testing, the number of times a certificate is referenced = 3 just in declaring the certificate (see the below example) so a number > 3 may indicate services dependent upon the certificate.
 7. Use regex to find any instances of *certificate self-signed* in the *running config*.  Writes *True* to the *found certificate self-signed?* field in the *hosts_output.csv* file if found.
 8. Use regex to find any instances of *enrollment selfsigned* in the *running config*.  Writes *True* to the *enrollment selfsigned?* field in the *hosts_output.csv* file if found.
 
@@ -186,7 +186,7 @@ So here is our resulting host_output.csv based upon the above running config sni
 | 192.168.1.1  |  16.6.2 | True | True | TP-self-signed-553499999 | 3 | True | True
 
 
-Based upon all of these criteria, this host would be a good candidate for the upgrade/workaround *although* it does not seem to have other services or lines referencing the self-signed certificate ( > 4)
+Based upon all of these criteria, this host would be a good candidate for the upgrade/workaround *although* it does not seem to have other services or lines referencing the self-signed certificate (less than 4 references for the self-signed cert).  If you see 4 or more references to the certification in the *number of certname references* field, you may want to inspect the config to see what services (secure voice, https, etc.) may be referencing the self-signed certificate.
 
 [Back To Index](#FN70489-Scanner)
 
