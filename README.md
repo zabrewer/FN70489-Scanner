@@ -7,7 +7,8 @@
     - [Installing to a Python Virtual Environment](#Installing-to-a-Python-Virtual-Environment)
 - [Use](#Use)
     - [Caution!](#Caution)
-    - [The hosts.yaml File](#The-hosts.yaml-File)
+    - [The hosts.yaml File](#The-hostsyaml-File)
+    - [Converting CSV to YAML](#Converting-CSV-to-YAML)
     - [Overview of Tests Completed Per Host](#overview-of-tests-completed-per-host)
     - [Example Config](#Example-Config)
 - [Credits](#Credits)
@@ -31,13 +32,14 @@ FN70489 scanner requires Python 3.5 or greater and the modules referenced in the
 
 ## Installing to a Python Virtual Environment
 
-Note: For Mac OSX, replace "python" with "python3" and for both platforms, make sure the output of python -v (or python3 -v) is 3.5 or greater.
+Note: For Mac OSX, replace "python" with "python3" and for both platforms, make sure the output of python --version (or python3 --version) is 3.5 or greater.
 
 **1. Clone this repository locally**
 ```
 git clone https://github.com/zabrewer/FN70489-Scanner.git
 ```
 **2. Create the virtual environment**
+(use either python or python3 as long as the output of the --version flag is greater than version 3.5)
 ```
 python3 -m venv FN70489-Scanner
 ```
@@ -109,6 +111,8 @@ All hosts to be scanned must exist in a hosts.yaml file which uses the following
   password: testpass
 ```
 
+## Converting CSV to YAML
+
 Note:  There are many tools in Python and online that will convert CSV or Excel to YAML.  A CSV source file should look something like this:
 
 ```
@@ -117,10 +121,12 @@ cisco_ios,192.168.1.1,testuser,testpass
 cisco_ios,192.168.1.1,testuser,testpass
 ```
 
-Here is one such tool although I have not used it myself:
+Here is one such tool.
 https://github.com/josuerojasrojas/csv-yaml
 
 A quick Google search should turn up many results.
+
+**If you want a complete step-by-step process for converting CSV to YAML see [here](README-CSV2YAML.md)**
 
 ## Overview of Tests Completed Per Host
 
